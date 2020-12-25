@@ -1,0 +1,2715 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+/* for google font == oswald */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap');
+/* for google font= Robick  */
+
+h1,h2,h3,h4,h5,h6,a{ font-family: 'Oswald', sans-serif;}
+a,p,span,strong {font-family: 'Roboto', sans-serif;}
+
+
+img{ max-width: 100%;}
+.box_shadow{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.coustom_container .container-fluid , .slider_image .container-fluid  {
+    max-width: 1320px;
+}
+/*  ============= header section start 01 ============== */
+header.header_section {
+    z-index: 9999;
+    background: white;
+}
+.coustom_nabvar li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+.coustom_nabvar li i {
+    font-size: 13px;
+    margin-left: 3px;
+}
+.coustom_nabvar li a {
+    display: inline-block;
+    padding: 14px 14px;
+    color: black;
+    text-decoration: none;
+    transition: .4s;
+}
+.coustom_nabvar li a:hover{
+    color: tomato;
+}
+.searcg_icon i {
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 36px;
+}
+.searcg_icon {
+    position: relative;
+}
+
+.searcg_icon::before {content: "";width: 2px;height: 24px;position: absolute;background: #ddd;right: 19px;top: 0px;}
+
+.call_icon_h {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: tomato;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.contact_text_h {
+    padding: 0px 28px;
+}
+
+.contact_text_h span {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.contact_text_h a {
+    text-decoration: none;
+    color: #636e72;
+    font-size: 15px;
+}
+/* --------------for phone animations ------------ */
+
+.call_icon_h {
+    position: relative;
+}
+
+.call_icon_h::before {
+    content: "";
+    background: #55efc4;
+    width: 100%;height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    border-radius: 50%;
+    animation: callanimation 1.2s ease-in-out infinite;
+}
+@keyframes callanimation{
+    0%{
+        transform: scale(0);
+        opacity: 3;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+/* --------------for header btn -------------------- */
+
+.btn-primary {
+    padding: 6px 31px;
+    background: tomato !important;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-primary::after {content: "";width: 0%;height: 100%;position: absolute;background: #2c3e50;right: 0;bottom: 0;border-radius: 4px;z-index: -1; transition: .5s;}
+.btn-primary:hover::after{
+   width: 100%;
+}
+
+/* ------------ for submenu all content ------------ */
+
+
+ul.submenu_one {
+    width: 200px;
+    background: white;
+    padding-left: 0;
+    top: 160%;
+    position: absolute;
+    left: -15%;
+    border-radius: 2px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+ul.submenu_one li {
+    display: block;
+}
+
+ul.submenu_one li a {
+    display: block;
+    padding: 6px 22px;
+    color: #636e72;
+}
+.coustom_nabvar li:hover ul.submenu_one{
+ 
+ visibility: visible;
+ opacity: 1;
+ top: 100%;
+}
+
+ul.submenu_one li a::before {content: "\f30b";display: inline-block;font-family: 'Font Awesome 5 Free';font-weight: 600;font-size: 13px;color: tomato;transform: translateX(-34px); transition: .4s;}
+ul.submenu_one li:hover a::before{
+    transform: translateX(8px);
+    margin-right: 15px;
+}
+
+
+/*  ============= header section end 01 ============== */
+
+
+/* =============== for slider section start 02 ==================== */
+section.slider_image {
+    background: url(image/main-banner2.jpg);
+    background-size: cover;
+    background-position: center -33%;
+    background-repeat: no-repeat;
+    padding: 180px 0px;
+    background-attachment: fixed;
+}
+.slider_text_content span {
+    color: tomato;
+}
+
+.slider_text_content h1 {
+    padding: 20px 0;
+    font-size: 48px;
+}
+
+.slider_text_content {
+    width: 500px;
+}
+
+h1 {}
+
+.slider_text_content p {
+    margin-bottom: 50px;
+}
+/* ----- for social icon ------ */
+
+.social_icon {
+    margin-top: 95px;
+}
+
+.social_icon span {
+    color: tomato;
+    margin-right: 38px;
+    display: inline-block;
+    position: relative;
+    font-size: 19px;
+}
+
+.social_icon a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: tomato;
+    line-height: 32px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.social_icon span::after {content: "";width: 16px;height: 2px;background: green;position: absolute;bottom: 9px;left: 92px;}
+
+
+
+/* =============== for slider section end 02 ==================== */
+/* ================ for company add section start 03 =============== */
+.conpany_slider a {flex: 1 0 auto;}
+
+/* ================ for company add section end 03 =============== */
+
+
+/* =============== exprience of loans section start 04 ================== */
+
+/* for left exprience */
+.image_box {
+    position: relative;
+}
+
+.mini_image_or_text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    background: url(image/shape.png);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    justify-content: center;
+}
+/* for right content */
+.exprience_about_word {
+    padding: 18px;
+}
+
+.exprience_about_word span {
+    color: tomato;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.exprience_about_word h1 {
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 22px;
+}
+
+ul.about_list {
+    margin-top: 13px;
+}
+
+ul.about_list li {
+    padding: 8px 0px;
+    list-style: none;
+    font-weight: 500;
+}
+
+ul.about_list li::before {content: "\f00c";font-family: 'Font Awesome 5 Free';font-weight: 600;font-size: 14px;display: inline-block;margin-right: 10px;color: tomato;}
+
+.exprience_about_word p {
+    margin-bottom: 35px;
+}
+/* =============== exprience of loans section start 04 ================== */
+
+
+/* ================ why people choose us section start 05 ====================== */
+/* -----for left animation -------- */
+.anim_boxs {
+    padding: 4px;
+}
+
+.people_words_anim span {
+    color: tomato;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.people_words_anim h3 {
+    margin-bottom: 21px;
+    display: block;
+}
+
+.people_words_anim {
+    margin-bottom: 48px;
+}
+
+.animation_image_main {
+    position: relative;
+}
+
+
+/* call animation  */
+.call_aminations_box a {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 166px;
+    bottom: 55px;
+    background: white;
+    text-align: center;
+    line-height: 80px;
+    font-size: 62px;
+    border-radius: 50%;
+    color: tomato;
+}
+
+.call_aminations_box a::before {
+    content: "";width: 100%;height: 100%;
+    background: red;top: 0;right: 0;
+    position: absolute;border-radius: 50%;
+    animation: callanimationbtn 1.6s ease-in-out infinite;
+}
+
+
+@keyframes callanimationbtn {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: .3;
+    }
+}
+
+/* for right animation box single */
+
+
+
+section.why_people_section {
+    background: #e5fafc;
+}
+
+.icon_fo_anim i {
+    width: 80px;
+    height: 80px;
+    background: white;
+    line-height: 80px;
+    font-size: 34px;
+    border-radius: 50%;
+    color: tomato;
+    border: .1px solid #ddd;
+}
+.single_animation_box {
+    background: white;
+    padding: 25px 10px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 25px;
+    transition: .4s;
+}
+.single_animation_box::before {
+    width: 87%;
+    height: 74%;
+    background: #ffcccc;
+    content: "";
+    position: absolute;
+    top: -141px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 50%;
+    z-index: -1;
+}
+.anim_margin {
+    margin-top: -22px;
+}
+.single_animation_box:hover {
+    transform: translateY(-10px);
+}
+.single_animation_box:hover .icon_fo_anim i {
+    color: white;
+    background-color: tomato;
+}
+
+/* ================ why people choose us section end 05 ====================== */
+
+
+
+/* ================ form or some wortd section start 06 =============== */
+/* for left */
+ul.business_idea {
+    position: relative;
+    margin-left: 26px;
+}
+
+ul.business_idea::after {
+    content: "";
+    width: 2px;
+    height: calc(100% - 80px);
+    background: tomato;
+    position: absolute;
+    top: 0;
+    left: -17px;
+}
+
+ul.business_idea li {
+    position: relative;
+}
+
+ul.business_idea li::before {
+    content: attr(data-counter);
+    position: absolute;
+    top: 0;
+    left: -69px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    text-align: center;
+    line-height: 33px;
+    font-size: 23px;
+    border-radius: 50%;
+    border: 2px solid tomato;
+    z-index: 1;
+    color: tomato;
+}
+
+
+.about_form_word {
+    margin-bottom: 61px;
+}
+
+.about_form_word span {
+    color: tomato;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.about_form_word h3 {
+    margin-bottom: 16px;
+}
+
+.about_business {
+    padding: 4px;
+}
+
+.about_business h3 {
+    margin-bottom: 44px;
+    font-size: 28px;
+}
+
+ul.business_idea li {
+    list-style: none;
+    margin-bottom: 29px;
+    position: relative;
+}
+
+ul.business_idea h4 {
+    margin-bottom: 11px;
+    font-size: 21px;
+}
+}
+
+
+
+
+
+/* for right */
+.form_boxes {
+    padding: 45px;
+    background: #ffcccc;
+}
+
+.form_texts span {
+    color: tomato;
+}
+
+.form_texts {
+    margin-bottom: 23px;
+}
+form.coustom_form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+form.coustom_form input {
+    margin-bottom: 24px;
+}
+.form_selects_box select {
+    height: 0px;
+    margin-bottom: 16px;
+}
+.form_boxes {
+    background: #ffcccc;
+    padding: 36px;
+}
+
+
+
+/* ================ form or some wortd section start 06 =============== */
+
+/* ============= contact us section start 07 ================= */
+.coustom_bg {
+    background: #7d5fffeb;
+    padding: 11px 25px;
+    border-radius: 5px;
+}
+
+.call_word_left h1 {
+    font-size: 34px;
+    padding: 20px 0px;
+    color: white;
+}
+
+.call_word_icon_right {
+    padding: 20px 58px;
+    color: white;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.call_icons_right a {
+    color: white;
+    display: inline-block;
+    margin-left: 37px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.call_icons_left i {
+    background: red;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    border-radius: 50%;
+}
+
+.call_word_icon_right::before {content: "";width: 2px;height: 70px;background: #ddd;top: 14px;left: 11px;position: absolute;}
+
+/* ============= contact us section end 07 ================= */
+
+
+
+/* ============ ============ company idea section start 08 ================ ========== */
+.about_company_ideas {
+    padding: 10px;
+}
+
+.company_word {
+    width: 100%;
+    margin-top: 21px;
+}
+
+.company_icon_left {
+    width: 28%;
+    font-size: 39px;
+    color: red;
+    margin-top: 1px;
+}
+
+.company_text_right p {
+    color: #747d8c;
+}
+
+.idea_of_image {
+    padding: 18px;
+}
+
+.company_text_right h5 {
+}
+
+.about_company_ideas h4 {
+    display: block;
+    font-size: 37px;
+    font-weight: 400;
+}
+/* ============ ============ company idea section end 08 ================ ========== */
+
+
+/* ================= slider slick box section start 09 =================== */
+section.slider_click_section {
+    background: #ced6e01f;
+}
+coustom_nav li {}
+
+coustom_nav li a {}
+
+
+
+.slider_inner_icon i {
+    width: 60px;
+    height: 60px;
+    background: white;
+    line-height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 2px wheat;
+    margin-bottom: 12px;
+    font-size: 27px;
+}
+
+
+li.nav-item {
+    flex: 1 1 auto;
+    border-bottom: 2px solid wheat;
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+}
+.coustom_nav li a.active .slider_inner_icon i{
+    color: tomato;
+}
+.coustom_nav li a.active{
+    position: relative;
+}
+.coustom_nav li a.active::before{
+    content: "";
+    width: 74%;
+    height: 100%;
+    border-bottom: 2px solid tomato;
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+}
+.slider_inner_icon h5 {
+    color: black;
+}
+/* ----- for slider second part ----------- */
+
+.service_rights {
+    padding-left: 46px;
+}
+
+ul.service_list li {
+    list-style: none;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+ul.service_list li::before {content: "\f00c";font-family: 'Font Awesome 5 Free';font-weight: 600;font-size: 13px;display: inline-block;margin-right: 10px;color: tomato;}
+
+/* ================= slider slick box section end 09 =================== */
+
+
+
+/* ============== cliend testimunian section start 10 ================  */
+
+.testimunial_word_left {
+    padding: 110px 10px;
+}
+
+.testimunial_word_left h4 {
+    color: tomato;
+}
+
+.founder_img {
+    padding: 31px;
+    position: relative;
+}
+.circkel_box span {
+    width: 20px;
+    height: 20px;
+    border: 2px solid tomato;
+    display: block;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.circkel_box {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.circkel_box span::before {content: "";width: 12px;height: 12px;background: green;position: absolute;top: 2px;left: 2px;border-radius: 50%;transition: .5s;transform: scale(0);opacity: 0;}
+.circkel_box span:hover::before{
+    transform: scale(1);
+    opacity: 1;
+}
+/* ============== cliend testimunian section end 10 ================  */
+
+
+/* ================= four image social lind section start 11 =====================  */
+.single_img_main {
+    position: relative;
+}
+
+.social_icon_four {
+    width: 152px;
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social_icon_four a {
+    width: 20px;
+    height: 20px;
+    background: tomato;
+    padding: 10px;
+    border-radius: 50%;
+    display: block;
+    display: grid;
+    place-content: center;
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    margin-right: 6px;
+    float: left;
+    overflow: hidden;
+    transition: .5s;
+}
+.social_icon_four a:hover{
+    background-color: white !important;
+    color: black !important;
+
+}
+
+.teams_information {margin-left: 15px;}
+
+.teams_information h4 {
+    display: block;
+    margin-top: 8px;
+    font-size: 20px;
+    color: tomato;
+}
+
+.teams_information h6 {
+    font-size: 13px;
+}
+/* for social icon */
+
+.social_icon_four a:nth-child(1){
+    background-color: #3b5998;
+   opacity: 0;
+   transition: .9s;
+}
+.social_icon_four a:nth-child(2){
+    background-color: #FF0000;
+    opacity: 0;
+   transition: .7s;
+}
+.social_icon_four a:nth-child(3){
+    background-color: #1DA1F2;
+    opacity: 0;
+   transition: .5s;
+}
+.social_icon_four a:nth-child(4){
+    background-color: #405DE6;
+    opacity: 0;
+   transition: .3s;
+}
+.single_img_main:hover .social_icon_four a:nth-child(1){
+    transform: translateY(20px);
+    opacity: 1;
+}
+.single_img_main:hover .social_icon_four a:nth-child(2){
+    transform: translateY(20px);
+    opacity: 1;
+}
+.single_img_main:hover .social_icon_four a:nth-child(3){
+    transform: translateY(20px);
+    opacity: 1;
+}
+.single_img_main:hover .social_icon_four a:nth-child(4){
+    transform: translateY(20px);
+    opacity: 1;
+}
+/* ================= four image social lind section start 11 =====================  */
+
+
+
+/* ================ for teams comunation section start 12 ================= */
+
+
+.comunation_single img {
+
+    transition: .5s;
+}
+.comunation_single:hover img {
+    transform: scale(1.1);
+    
+}
+
+
+section.comunation_section {
+    background: #dfe6e969;
+    padding: 151px 0px;
+}
+.for_teams_info h6 {
+    display: block;
+    color: tomato;
+    margin-top: 10px;
+}
+
+.for_teams_info h2 {
+    font-size: 25px;
+    font-weight: 500;
+    display: block;
+    margin-top: 12px;
+}
+
+.for_teams_info a {
+    text-decoration: none;
+    color: tomato;
+}
+.for_teams_info {
+    overflow: hidden;
+}
+.for_teams_info a::before {content: "\f30b";font-family: 'Font Awesome 5 Free';font-weight: 600;display: inline-block;transform: translateX(-16px); transition: .5s;}
+.for_teams_info a:hover::before{
+    transform: translateX(8px);
+    margin-right: 10px;
+}
+/* ================ for teams comunation section end 12 ================= */
+
+
+
+/* =================== footer section start 13 ==================== */
+section.footer_section {
+    padding-top: 85px;
+    padding-bottom: 38px;
+    background: #0c2461;
+    color: white;
+}
+
+.footer_icons img {
+    display: block;
+    width: 126px;
+    margin-bottom: 32px;
+}
+
+.footer_icons {
+}
+
+.footer_social_icons a {
+    width: 20px;
+    height: 20px;
+    background: tomato;
+    padding: 18px;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    display: grid;
+    place-content: center;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.footer_about_company h4 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 17px;
+}
+
+.footer_about_company ul li {
+    list-style: none;
+    display: block;
+    padding: 6px 0px;
+}
+
+.footer_about_company ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.footer_social_icons {
+    margin-top: 29px;
+}
+
+.f_icon_left i {
+    width: 44px;
+    font-size: 27px;
+    margin-top: 5px;
+    color: tomato;
+}
+
+.footer_icons_contact {
+    padding: 13px 0px;
+}
+
+.text_right_f span {
+    text-decoration: none;
+}
+
+.f_icon_left a {
+}
+
+.text_right_f span a {
+    text-decoration: none;
+    color: white;
+}
+
+section.footer_section_area {
+    padding: 25px 0px;
+    border-top: 2px solid #ddd;
+    text-align: center;
+    background: #0c2461;
+    color: white;
+}
+
+.for_footer_inner span {
+    margin-left: 18px;
+    color: tomato;
+    font-weight: 600;
+}
+
+/* =================== footer section end 13 ==================== */
+
+
+
+
+
+
+
+
+/* ============================================================================================================== 
+=============================================================================================================*/
+
+                        /* for home page one main css code  
+                                    start page design       
+ /* ========================================================================================== ==================
+ ================================================================================================================*/
+
+
+/*  ================= home page one slider section start 02 ======================  */
+
+
+section.slider_section_one {
+    background: url(image/main-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -24%;
+    position: relative;
+    z-index: 1;
+    padding-top: 210px;
+    background-attachment: fixed;
+}
+
+.slider_img_one_text {
+    align-items: center;
+    width: 608px;
+    color: white;
+}
+
+.slider_img_one_text span {
+    color: tomato;
+    display: block;
+}
+
+.slider_img_one_text h3 {
+    display: block;
+    padding: 10px 0px;
+    font-size: 4rem;
+}
+
+.slider_img_one_text p {
+    font-size: 19px;
+}
+
+section.slider_section_one::before {content: "";width: 100%;height: 100%;background: #0000005c;position: absolute;top: 0;left: 0;z-index: -1;}
+
+
+/*--------------- for icon section text ----------------- */
+.custom_padding_btn {
+    padding: 12px 51px;
+}
+
+.sliders_btn {
+    margin-top: 60px;
+}
+
+.slider_server_section {
+    border-top: 1px solid #ddd;
+    margin-top: 97px;
+}
+
+.sliders_icon_left i {
+    width: 60px;
+    font-size: 30px;
+    margin-top: 10px;
+    color: tomato;
+}
+
+.loans_text_right {
+    color: white;
+}
+.custom_border {position: relative;padding: 32px 0px;}
+.custom_border::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #ddd;
+}
+.custom_border_seceond {position: relative;padding: 32px 0px;}
+.custom_border_seceond::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #ddd;
+}
+
+
+
+/*  ================= home page one slider section end 02 ======================  */
+
+
+
+/* ================== conpany secrvice section page one section start 03 ========================= */
+section.exprience_of_sections_one {
+    padding: 161px 0px;
+}
+
+.service_enpriences {
+    width: 414px;
+    box-shadow: -1px 6px 14px -3px #ddd;
+    border-radius: 2px;
+    border-left: 2px solid tomato;
+    position: absolute;
+    bottom: -42px;
+    right: 73px;
+    background: white;
+}
+
+.years_exprience h3 {
+    font-size: 69px;
+    padding: 30px;
+}
+
+.years_exprience_right h4 {
+    padding: 43px 19px;
+}
+
+.conpanys_img_left {
+    position: relative;
+}
+
+.about_expriences_text {
+    padding: 0px 54px;
+}
+
+.about_expriences_text span {
+    display: block;
+    color: tomato;
+    margin-bottom: 13px;
+}
+
+.about_expriences_text h4 {
+    margin-bottom: 21px;
+}
+
+ul.com_list li {
+    list-style: none;
+    font-weight: 600;
+    padding: 3px 0px;
+}
+
+ul.com_list {
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+ul.com_list li::before {content: "\f00c";font-family: 'Font Awesome 5 Free';font-weight: 600;font-size: 13px;display: inline-block;margin-right: 10px;color: tomato;}
+/* ================== conpany secrvice section page one section end 03 ========================= */
+
+/* =================== secrvice box section one page start 04 =========================== */
+
+
+section.service_section_mains {
+    background-color: #F9FAFB;
+    padding: 140px 0px;
+}
+
+.service_top_text {
+    margin-bottom: 91px;
+}
+
+.service_top_text span {
+    display: block;
+    color: orangered;
+}
+
+.service_top_text h4 {
+    display: block;
+    padding: 4px 0px;
+    font-size: 36px;
+}
+
+.single_service.text-center {}
+
+.single_icon_one {
+    padding: 40px 10px;
+    background: white;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s;
+}
+
+.single_icon_one i {
+    width: 80px;
+    height: 80px;
+    background: white;
+    line-height: 80px;
+    border-radius: 50%;
+    font-size: 38px;
+    margin-bottom: 27px;
+    box-shadow: 0px 0px 0px 1px #ddd;
+    color: red;
+    transition: .5s;
+}
+
+.single_icon_one::before {content: "";width: 97%;height: 69%;position: absolute;background: #f8a5c2;left: 0;right: 0;margin: auto;border-radius: 50%;top: -38%;z-index: -1;}
+
+.single_icon_one:hover {
+    transform: translateY(-10px);
+}
+.single_icon_one:hover.single_icon_one i{
+    background-color: #778beb;
+    color: white;
+}
+
+/* =================== secrvice box section one page end 04 =========================== */
+
+
+/* =============== conpany value section start 05 ============== */
+section.company_value_section {
+    
+    background-color: #F9FAFB;
+}
+.conpany_imgs {
+    background: url(image/company.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.single_icon i {
+    width: 50px;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 15px;
+    margin-top: 10px;
+    color: red;
+}
+
+.company_main_single {
+    margin-top: 6px;
+}
+
+.conpany_value_right h3 {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.conpany_value_right {
+    padding: 16px;
+}
+/* =============== conpany value section end 05 ============== */
+
+
+
+/* ================= section of list fore start 06 ================= */
+.left_company_list h3 {
+    margin-bottom: 70px;
+    display: block;
+}
+
+.left_company_list {
+    padding: 10px 10px;
+}
+
+ul.service_of_lists li {
+    list-style: none;
+    position: relative;
+}
+
+.list_texts h4 {
+    font-size: 22px;
+}
+
+.list_texts {
+    margin-bottom: 32px;
+}
+
+ul.service_of_lists {
+    position: relative;
+    margin-left: 45px;
+}
+
+ul.service_of_lists::before {
+    content: "";
+    width: 2px;
+    height: calc(100% - 80px);
+    position: absolute;
+    left: -29px;top: 0;
+    background: tomato;
+}
+
+ul.service_of_lists li::before {
+    content: attr(data-count);
+    display: inline-block;
+    background: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 26px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -81px;
+    border: 2px solid tomato;
+}
+
+/*--------- for form right---------- */
+.form_right_box {
+    padding: 23px 35px;
+    background: #006266;
+    color: white;
+}
+
+.form_right_box label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form_right_box input {
+    margin-bottom: 16px;
+}
+
+.form_right_box select {
+    margin-bottom: 10px;
+}
+
+.form_botton {
+    margin-top: 28px;
+}
+/* ================= section of list fore end 06 ================= */
+
+
+/* ================== what's our client say section start 07 ======================= */
+.client_testimunial_boxs {
+    padding: 14px 17px;
+    box-shadow: 0px 0px 17px 0px #ddd;
+    margin-bottom: 26px;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+
+section.clied_section_word {
+    padding: 50px 0px;
+}
+
+.left_client_img img {
+    width: 90px;
+    border-radius: 50%;
+    display: block;
+    margin-right: 25px;
+    padding: 6px;
+}
+
+.image_client_left {
+    margin-top: 10px;
+}
+
+.client_texts {
+    padding: 20px 0px;
+}
+
+.client_texts span {
+    display: block;
+}
+
+.image_client_left p {
+}
+
+.client_texts strong {
+    color: tomato;
+}
+/* ================== what's our client say section end 07 ======================= */
+
+
+
+
+
+/* =====  =================== recent section start 08 ========================= */
+.recent_data span {
+    display: block;
+    padding: 10px 0px;
+    color: tomato;
+    font-weight: 600;
+}
+
+.recent_data a {
+    text-decoration: none;
+    color: tomato;
+    display: block;
+    margin-top: 20px;
+    transition: .5s;
+}
+.recent_single_box:hover .recent_data a{
+
+   letter-spacing: 1px;
+   color: green;
+   font-weight: 700;
+}
+/* =====  =================== recent section end 08 ========================= */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================================================================================================
+======================================================================================================================= */
+                    /* home page three start 
+                    all css property here  */
+/* =====================================================================================================================
+====================================================================================================================== */
+
+
+
+/* ============================ slider section three start 01 ========================== */
+section.page_three_slider {
+    background: url(image/main-banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 8%;
+    padding: 80px 0px;
+    background-attachment: fixed;
+}
+
+.page_three_text_top_slider h1 {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.three_btn {
+    margin-top: 71px;
+}
+/* ----------- for three single box -------------- */
+.single_box_main_three {
+    background-color: #55efc4;
+    border-radius: 3px;
+}
+
+.single_content_box {
+    padding: 14px;
+}
+
+.slider_icons i {
+    width: 71px;
+    margin-left: 25px;
+    font-size: 35px;
+    color: white;
+}
+.custom_borders {
+    position: relative;
+}
+
+.custom_borders::after {content: "";width: 2px;height: 50px;right: 0px;top: 0;position: absolute;bottom: 0;margin: auto;background: #fab1a0;}
+/* ============================ slider section three end 01 ========================== */
+
+
+
+/* ====================== three why people choose us section start 02 ================================ */
+
+.single_choose_box {
+    background: url(image/process-shape.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 53px 0px;
+}
+
+.single_choose_box i {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: white;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    color: tomato;
+    font-size: 30px;
+}
+
+.single_choose_box p {padding: 0px 20px;}
+
+.people_choose span {
+    display: block;
+    color: tomato;
+    margin-bottom: 6px;
+}
+
+.people_choose h4 {
+    margin-bottom: 13px;
+}
+
+
+/* ====================== three why people choose us section end 02 ================================ */
+
+
+
+/* ===================== three section about conpany start 03 ========================= */
+
+.company_right_content span {
+    color: tomato;
+    display: block;
+}
+
+.company_right_content h3 {
+    padding: 10px 0px;
+}
+
+.conpany_btn {
+    margin-top: 37px;
+}
+
+.company_right_content {
+    padding: 0px 48px;
+}
+
+/* ===================== three section about conpany end 03 ========================= */
+
+/* ========================== service tab section start 04 ====================================== */
+
+.custom_tab {
+    padding-left: 0;
+}
+
+.custom_tab li {
+    flex: 1 0 auto;
+}
+.custom_tab li a.active i {
+    color: tomato;
+}
+.custom_tab li a.active{
+    position: relative;
+}
+.custom_tab li a.active::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid tomato;
+
+}
+.custom_tab li a i {
+    width: 70px;
+    height: 70px;
+    background: white;
+    line-height: 70px;
+    color: green;
+    font-size: 30px;
+    border-radius: 50%;
+    margin-bottom: 14px;
+    margin-top: 44px;
+}
+
+section.section_of_tabs {
+    background: #dff9fb;
+}
+
+
+/* ========================== service tab section end 04 ====================================== */
+
+
+/* =============== three page section company value start 05 ==================================== */
+ul.value_box li {
+    list-style: none;
+    flex: 0 0 50%;
+    margin-top: 20px;
+}
+
+ul.value_box i {
+    width: 40px;
+    height: 40px;
+    background: tomato;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 11px;
+    color: white;
+    font-size: 20px;
+}
+
+ul.value_box {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.value_box strong {
+    font-size: 21px;
+}
+/* =============== three page section company value end 05 ==================================== */
+
+
+
+
+/*  ============================ for carosul section slider start 06 =======================================  */
+
+
+.for_slider_boxes {
+    background: aqua;
+}
+
+.image_of_slider {
+    padding: 22px;
+    position: relative;
+}
+
+.man_icon {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+}
+
+.man_icon i {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background: white;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50%;
+    font-size: 40px;
+    transition: .5s;
+}
+
+.man_text {
+    padding: 60px 20px;
+}
+
+.man_icon i:hover {
+    background-color: tomato;
+    color: white;
+}
+
+
+
+/*  ============================ for carosul section slider start 06 =======================================  */
+
+
+/* - ========================== company forms section start 07 ============================================ - */
+.items_left h2 {
+    display: block;
+    margin-bottom: 42px;
+}
+
+ul.form_list_left li {
+    list-style: none;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+ul.form_list_left li::before {
+    content: attr(data-number);
+    width: 40px;
+    height: 40px;
+    background: white;
+    position: absolute;
+    text-align: center;
+    line-height: 33px;
+    font-size: 25px;
+    border-radius: 50%;
+    left: -74px;
+    top: 0;
+    border: 2px solid tomato;
+    color: tomato;
+}
+
+ul.form_list_left {
+    margin-left: 40px;
+    position: relative;
+}
+
+ul.form_list_left::before {content: "";width: 2px;height: calc(100% - 70px);background: tomato;top: 0;left: -22px;position: absolute;}
+
+.form_inner_right {
+    background-color: #006266;
+    padding: 36px 60px;
+}
+
+.form_inner_right label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.form_inner_right input {
+    margin-bottom: 13px;
+}
+
+.form_inner_right select {
+    margin-bottom: 10px;
+}
+/* - ========================== company forms section end 07 ============================================ - */
+
+
+
+
+
+
+/* ###################################################################################################################################
+/* ###################################################################################################################################
+##################################################################################################################################### */
+
+                                    /* for service page main here 
+                                    start templeted  */
+
+
+/* ###################################################################################################################################
+/* ###################################################################################################################################
+##################################################################################################################################### */
+
+/* =============================== service section start 01 ================================ */
+section.secvice_slider_carosol {
+    background: url(image/bgs-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -24%;
+    padding: 208px 0px;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+section.secvice_slider_carosol::before {content: "";width: 100%;height: 100%;background: #ffffff87;position: absolute;top: 0;left: 0;z-index: -1;}
+/* =============================== service section end 01 ================================ */
+
+/* ========================================= search box section start 02 ==================================== */
+
+
+            /* for search */
+.single_search {
+    background: #1289A7;
+    padding: 20px 17px;
+}
+
+.single_search i {
+    width: 22px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.single_search span {background:#12CBC4;color: tomato;}
+.about_hours_time {
+    padding: 17px 17px;
+}
+
+.about_hours_time h3 {
+    display: block;
+    margin-bottom: 17px;
+}
+/* for catagori list */
+
+.catagori_box {
+    padding: 22px 28px;
+    box-shadow: 0px 0px 17px 0px #ddd;
+    border-radius: 5px;
+}
+
+.catagori_box li {
+    list-style: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.catagori_box li a {
+    display: block;
+    padding: 5px 0px;
+    text-decoration: none;
+    color: tomato;
+    font-weight: 600;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.catagori_box ul {
+    margin-top: 15px;
+    padding-left: 0;
+}
+.catagori_box li a:hover{
+
+    letter-spacing: 1px;
+    transform: translateX(10px)
+}
+.catagori_box li a::before {
+    content: "\f30b";
+    font-weight: 600;
+    font-family: 'Font Awesome 5 Free';
+    display: inline-block;
+    transform: translateX(-16px);
+    transition: .5s;
+}
+.catagori_box li a:hover::before{
+    transform: translateX(10px);
+    margin-right: 15px;
+    color: teal;
+}
+.catagori_box h4 {
+    display: block;
+    padding-left: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 6px;
+}
+
+
+
+            /* for hours time */
+
+
+ .oppening_hours {
+    margin-top: 23px;
+    padding: 31px 12px;
+    box-shadow: 0px 0px 19px 0px #ddd;
+}
+
+.oppening_hours ul li {
+    padding: 6px 0px;
+    list-style: none;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.oppening_hours ul li span {
+    display: inline-block;
+    float: left;
+}
+
+.oppening_hours ul li strong {
+    display: inline-block;
+    float: right;
+    margin-right: 23px;
+} 
+
+
+
+
+
+/* ========================================= search box section end 02 ==================================== */
+
+
+/* =============================== service form section start 03 ====================================== */
+
+
+.loan_form {
+    padding: 10px 26px;
+    box-shadow: 0px 0px 20px 0px #ddd;
+    margin-bottom: 52px;
+    border-radius: 5px;
+}
+
+.loan_form h4 {
+    border-bottom: 2px solid tomato;
+    padding-bottom: 11px;
+}
+/* ----------- for right content -------- */
+.icon_of_single {
+    box-shadow: 0px 0px 9px 0px #ddd;
+    margin-top: 19px;
+}
+
+.icon_of_single i {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 58px;
+    background: green;
+    border-radius: 50%;
+    margin: 13px 0px;
+    color: white;
+}
+
+.icon_of_single h4 {
+    padding-bottom: 46px;
+    width: 100px;
+    margin: auto;
+}
+
+.service_box_three {
+    margin-left: 14px;
+}
+
+
+/* =============================== service form section end 03 ====================================== */
+
+
+
+
+/* ##########################################################################################################################################
+############################################################################################################################################ */
+
+                        /* for page of funding 
+                        whole css content here 
+                         you can solve your whole problem */
+
+/* ##########################################################################################################################################
+############################################################################################################################################ */
+
+
+
+/* ============================== fonding bg section start  01 ============================== */
+section.funding_slider_carosol {
+    background: url(image/bg-6.jpg);
+    background-size: cover;
+    background-position: center 1%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 150px 0px;
+}
+
+section.funding_slider_carosol h1 {
+    color: white;
+}
+/* ============================== fonding bg section end 01 ============================== */
+
+
+
+
+
+/* ============================= about funding section start 02 ===================================== */
+span.about_texts {
+    display: block;
+    color: tomato;
+}
+
+.about_funding_right_text {
+    padding: 0px 26px;
+}
+
+.about_funding_right_text h4 {
+    display: block;
+    padding: 10px 0px;
+}
+
+.about_funding_right_text ul li a {
+    list-style: none;
+}
+ul.funding_list li {
+    list-style: none;
+    padding: 8px 0px;
+}
+
+ul.funding_list a {
+    text-decoration: none;
+    color: black;
+}
+
+ul.funding_list span {
+    color: tomato;
+    margin-right: 10px;
+}
+/* ============================= about funding section end 02 ===================================== */
+
+
+/* ============================ funding section of animation start 03 ================================== */
+        /* for animation left */
+  .animation_top_text span {
+            display: block;
+            color: tomato;
+            margin-bottom: 9px;
+  }
+        
+.animation_top_text p {
+            margin-top: 15px;
+        }
+        
+section.section_of_animatin {
+            padding: 130px 0px;
+            background-color: #dff9fbe6;
+        }
+        
+.animation_img_left {
+            position: relative;
+        }
+        
+.animation_call_icon i {
+            width: 80px;
+            height: 80px;
+            background: white;
+            text-align: center;
+            line-height: 80px;
+            font-size: 63px;
+            border-radius: 50%;
+            color: tomato;
+        }
+        
+.animation_call_icon {
+            position: absolute;
+            right: 167px;
+            bottom: 52px;
+        }
+        
+.animation_call_icon::before {
+            content: "";
+            width: 100%;height: 100%;
+            background: red;
+            position: absolute;
+            border-radius: 50%;
+            top: 0;left: 0;
+            animation: callanim 1.4s ease-in-out infinite;
+        }       
+  @keyframes callanim{
+      0%{
+          transform: scale(0);
+          opacity: 2;
+      }
+      100%{
+          transform: scale(1.8);
+          opacity: .2;
+      }
+  }  
+  
+  /* --------- animation right -------------- */
+  .single_of_animation {
+    padding: 43px 19px;
+    background: white;
+    border-radius: 3px;
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.single_of_animation i {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 41px;
+    border-radius: 50%;
+    margin-bottom: 23px;
+    box-shadow: 0px 0px 7px 0px #ddd;
+    position: relative;
+    background: white;
+    color: tomato;
+}
+
+.single_of_animation p {
+    margin-top: 21px;
+}
+
+.single_of_animation::before {content: "";width: 99%;height: 79%;background: tomato;top: -159px;left: 0;position: absolute;right: 0;margin: auto;border-radius: 50%;}
+
+.animation_mr {
+    margin-top: -26px;
+}
+.single_of_animation:hover {
+    transform: translateY(-10px);
+}
+/* ============================ funding section of animation end 03 ================================== */
+
+
+
+/* ============================= section connecting of start 04 ============================================== */
+
+.single_of_connect i {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 0px #ddd;
+    font-size: 34px;
+    margin: 20px 0px;
+    color: red;
+}
+
+.single_of_connect {
+    margin: 50px;
+    position: relative;
+}
+
+.custom_img {
+    position: relative;
+}
+
+.custom_img::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(image/works-shape.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -8px;
+    right: -190px;
+}
+.custom_img_shaip{
+    position: relative;
+}
+.custom_img_shaip::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(image/works-shape2.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 34px;
+    right: -190px;
+}
+
+
+/* ============================= section connecting of end 04 ============================================== */
+
+
+/* ============================== for funding form section start 05 ========================================= - */
+
+.funding_form label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.funding_form input {
+    margin-bottom: 30px;
+}
+
+.funding_form {
+    padding: 0px 80px;
+}
+
+.form_texts_check a {
+    text-decoration: none;
+    color: tomato;
+}
+
+/* ============================== for funding form section end 05 ========================================= - */
+
+
+
+
+
+
+/* ##########################################################################################################################################
+############################################################################################################################################ */
+
+                        /*  page of Loans  
+                        whole css content here 
+                         you can solve your whole problem */
+
+/* ##########################################################################################################################################
+############################################################################################################################################ */
+
+/*====================================== section of loans start 01 =============================================  */
+section.loan_section {
+    background: url(image/bg-7.jpg);
+    background-size: cover;
+    background-position: center -15%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 173px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+section.loan_section::before {content: "";width: 100%;height: 100%;background: #ffffff96;position: absolute;top: 0;left: 0;z-index: -1;}
+
+ /* ====================================== section of loans end 01 =============================================  */
+
+
+/* ======================================= about loan of finix section start 02 ======================================================= */
+.loan_img_left {
+    position: relative;
+}
+
+.loan_inner_img {
+    background: url(image/shape.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 49px;
+    position: absolute;
+    bottom: 0;
+    right: 48px;
+    height: 210px;
+    width: 210px;
+}
+
+.loan_inner_img p {
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 129px;
+}
+ul.loan_list1 li {
+    display: block;
+    padding: 4px 0px;
+    list-style: none;
+    font-weight: 500;
+}
+
+ul.loan_list1 li a {
+}
+
+ul.loan_list1 li::before {content: "\f00c";font-family: 'Font Awesome 5 Free';font-weight: 600;margin-right: 10px;color: tomato;font-size: 14px;}
+/* ======================================= about loan of finix section end 02 ======================================================= */
+
+
+
+/* - ================================ section loans connect start 03 ===================================== */
+.single_of_loan {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    box-shadow: 0px 0px 14px 0px #ddd;
+    color: tomato;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 39px;
+}
+
+.single_of_loan h5 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 59px;
+    opacity: .6;
+}
+
+.single_of_loan span {
+    display: inline-block;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    color: #535c68;
+    font-size: 25px;
+}
+.loan_img_shap {
+    position: relative;
+}
+.loan_img_shap {
+    position: relative;
+}
+.loan_img_shap::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(image/works-shape.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0;
+    left: 54%;
+    margin: auto;
+}
+.loan_img_shapes {
+    position: relative;
+}
+
+.loan_img_shapes::after {content: "";width: 100%;height: 100%;background: url(image/works-shape2.png);position: absolute;background-repeat: no-repeat;bottom: 72px;left: 55%;background-position: center;}
+
+
+/* - ================================ section loans connect end 03 ===================================== */
+
+
+/* ===================================== section of apply for a loan start 04 ================================================= */
+section.section_apply {
+    background-color: #c7ecee;
+}
+
+.appy_loan_left h3 {
+    display: block;
+    margin-bottom: 13px;
+}
+
+.appy_loan_left ul li {
+    margin-bottom: 31px;
+    list-style: none;
+    position: relative;
+}
+
+.appy_loan_left ul li::before {
+    content: attr(data-digit);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 50%;
+    border: 2px solid tomato;
+    left: -71px;
+    top: 0px;
+    font-size: 25px;
+    color: tomato;
+    background: #c7ecee;
+}
+
+.appy_loan_left ul {
+    margin-left: 33px;
+    position: relative;
+    margin-top: 35px;
+}
+
+.appy_loan_left ul::before {content: "";width: 2px;height: calc(100% - 78px);background: tomato;position: absolute;left: -19px;top: 0;}
+/* ===================================== section of apply for a loan end 04 ================================================= */
+
+
+/*  =================================== section loan check start 05 ============================================  */
+
+/*  =================================== section loan check end 05 ============================================  */
+
+
+/*  ================================== section form loan start 06 =======================================  */
+.defult_form {
+    padding-left: 17px;
+}
+/*  ================================== section form loan end 06 =======================================  */
+
+
+
+
+
+
+
+
+
+
+
+/* ##########################################################################################################################################
+############################################################################################################################################ */
+
+                        /*  page of News  
+                        whole css content here 
+                         you can solve your whole problem */
+
+/* ##########################################################################################################################################
+############################################################################################################################################ */
+
+/* ================================== section of news start 01 ================================================= */
+
+section.section_news {
+    background: url(image/bg-8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -19%;
+    padding: 163px 0px;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+section.section_news::before {content: "";width: 100%;height: 100%;position: absolute;background: #526888b0;top: 0;left: 0;z-index: -1;}
+
+/* ================================== section of news end 01 ================================================= */
+
+
+
+/* ================================ about news section start 02 =============================================== */
+/* left content */
+.news_right_info {
+    padding: 28px 16px;
+    box-shadow: 0px 0px 19px 0px #ddd;
+    border-radius: 2px;
+}
+
+.news_right_info i {
+    height: 24px;
+    padding-top: 4px;
+    color: tomato;
+}
+
+.news_left_icons {
+    padding: 10px 0px;
+}
+
+.calander_left i {
+    color: tomato;
+    padding: 0px 13px;
+}
+
+.calender_info {
+    margin-right: 20px;
+}
+
+.news_left_icons h2 {
+    display: block;
+}
+
+.news_info h2 {
+    padding: 6px 0px;
+}
+
+.news_btns {
+    margin-top: 35px;
+}
+
+
+
+
+/* for right list */
+
+.loan_catagori_box {
+    margin-top: 67px;
+    padding: 21px 20px;
+    box-shadow: 0px 0px 20px 0px #ddd;
+}
+
+.loan_catagori_box h4 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 14px;
+}
+
+.loan_catagori_box ul li {
+    list-style: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.loan_catagori_box ul li a {
+    text-decoration: none;
+    padding: 7px 0px;
+    display: inline-block;
+    color: #576574;
+    font-weight: 500;
+    transition: .5s;
+    
+}
+
+
+
+
+.loan_catagori_box ul li a:hover{
+   letter-spacing: 1px;
+   color: tomato;
+}
+
+
+
+
+
+/* ================================ about news section  end 02 =============================================== */
+
+
+/*  ============================ recent post section start 03 ==================================== - */
+.recent_post_left {
+    box-shadow: 0px 0px 17px 0px #ddd;
+    padding: 42px 20px;
+}
+
+.recent_post_left h4 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+ul.posts_left {
+    padding-left: 0px;
+}
+
+.post_img_left img {
+    width: 145px;
+}
+
+.post_img_right a {
+    font-size: 17px;
+    text-decoration: none;
+    color: tomato;
+}
+
+.post_img_right {padding-left: 29px;}
+
+.post_img_left {
+}
+
+ul.posts_left li {
+    padding: 5px 0px;
+}
+.tag_group {
+    box-shadow: 0px 0px 9px 0px #ddd;
+   
+    padding: 29px;
+}
+ul.tag_list{
+    margin-top: 35px;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+ul.tag_list li {
+    list-style: none;
+    border: 1px solid #ddd;
+    flex: 1 0 auto;
+    padding: 5px 7px;
+    margin-bottom: 13px;
+    margin-right: 9px;
+}
+
+ul.tag_list li a {
+    text-decoration: none;
+}
+/*  ============================ recent post section end 03 ==================================== - */
+
+
+
+
+
+
+
+
+/* ##########################################################################################################################################
+############################################################################################################################################ */
+
+                        /*  page of Contact page   
+                        whole css content here 
+                         you can solve your whole problem */
+
+/* ##########################################################################################################################################
+############################################################################################################################################ */
+
+
+/*  ================================== section contact slider start 01 ===================================== - */
+section.section_slider {
+    background: url(image/bgss.jpg);
+    background-position: center -18%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 172px 0px;
+    position: relative;
+    z-index: 1;
+    color: crimson;
+}
+
+section.section_slider::before {content: "";width: 100%;height: 100%;position: absolute;background: #ffffff7d;top: 0;left: 0;z-index: -1;}
+/*  ================================== section contact slider end 01 ===================================== - */
+
+
+/* ==================================== section of discouse start 02 ================================================= */
+.contact_page_form_left label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact_page_form_left input {
+    margin-bottom: 36px;
+    cursor: pointer;
+}
+section.section_discuss {
+    padding: 117px 0px;
+}
+
+.form_topword {
+    margin-bottom: 49px;
+}
+
+.form_topword h3 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.contact_right {padding: 0px 63px;}
+
+.contact_icon_text_main {
+    margin-top: 13px;
+}
+
+.cont_icon_left i {
+    display: inline-block;
+    margin-top: 3px;
+    color: tomato;
+    width: 41px;
+    font-size: 29px;
+    height: auto;
+}
+
+.cont_text_right ul {
+    padding-left: 0px;
+}
+
+.cont_text_right ul li {
+    list-style: none;
+    padding: 13px 0px;
+}
+
+.cont_text_right {
+    margin-left: 47px;
+}
+
+.cont_text_right ul li span {
+    float: left;
+    display: block;
+}
+
+.cont_text_right ul li strong {
+    float: right;
+    display: block;
+    padding-left: 100px;
+}
+
+.cont_text_right h4 {
+}
+
+.contact_icon_text_main h4 {font-size: 17px;}
+
+.cont_text_right h5 {font-weight: 400;font-size: 17px;}
+
+.cont_text_right a {
+    text-decoration: none;
+    color: #636e72;
+    font-size: 18px;
+}
+/* ==================================== section of discouse end 02 ================================================= */
+
+/* ================================ for location image gelari start 03 ========================================= */
+.gelari_info h4 {
+    display: block;
+    padding: 4px 0px;
+    color: red;
+}
+
+.gelari_img {
+    padding: 2px;
+}
+/* ================================ for location section gelari end 03 ========================================= */
+
+
+
+
+/* ##########################################################################################################################################
+############################################################################################################################################ */
+
+                        /*  page of Login page   
+                        whole css content here 
+                         you can solve your whole problem */
+
+/* ##########################################################################################################################################
+############################################################################################################################################ *
+
+
+
+/* ================================== section of login page start 01 ======================================== */
+section.section_login {
+    background: #778ca3b8;
+    padding: 130px 0px;
+}
+
+.bg_form_left {
+    background: white;
+    padding: 0px 49px;
+    padding-top: 50px;
+}
+
+.bg_form_right_inner {
+    background: #006266d1;
+    color: white;
+    padding: 180px 48px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.form_box_left label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form_box_left input {
+    margin-bottom: 9px;
+}
+
+.form_box_left select {
+    height: 0px;
+}
+
+.form_btncustom {
+    padding: 9px;
+}
+
+.form_socil_icon {margin: auto;width: 60%;}
+
+.form_socil_icon a {
+    width: 20px;
+    height: 20px;
+    background: tomato;
+    padding: 16px;
+    display: grid;
+    place-content: center;
+    text-decoration: none;
+    color: white;
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: .5s;
+}
+.form_socil_icon a:nth-child(1){
+    background-color: turquoise;
+}
+.form_socil_icon a:nth-child(2){
+    background-color: #FF0000;
+}
+.form_socil_icon a:nth-child(3){
+    background-color:  #1DA1F2;;
+}
+.form_socil_icon a:nth-child(4){
+    background-color: #5851D8;
+}
+.form_socil_icon a:hover{
+    background-color: white;
+    color: black;
+}
+.form_min_btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 26%;
+    text-align: center;
+}
+
+.skip_btn {
+    width: 28%;
+}
+
+.enter_btn {
+    width: 50%;
+    margin-left: 20px;
+    border: 1px solid;
+}
+
+.skip_btn a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid;
+    display: block;
+    padding: 2px 13px;
+    transition: .5s;
+}
+.skip_btn a:hover{
+    background-color: white;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.enter_btn a {text-decoration: none;color: white;transition: .5s;display: block;padding: 2px 8px;}
+.enter_btn a:hover{
+    background-color: white;
+    color: black;
+    letter-spacing: 1px;
+}
+.form_right_word p {
+    font-size: 15px;
+    margin: 29px 28px;
+}
+
+.form_min_btn {
+    padding-top: 22px;
+}
+
+.bg_form_right_inner::before {content: "";width: 249%;height: 151%;background: #006266d1;position: absolute;top: 0%;left: -134%;z-index: -1;box-shadow: 0px 0px 26px 0px #ddd;border-radius: 50%;}
+.form_btncustom {
+    padding: 9px 42px;
+    margin-top: 22px;
+}
+/* ================================== section of login page end 01 ======================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
